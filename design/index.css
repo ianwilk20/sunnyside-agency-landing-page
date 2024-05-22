@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+:root {
+    font-size: 18px;
+}
+
+body {
+    font-family: "Fraunces";
+    margin: 0;
+}
+
+nav {
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.sec-creatives {
+    background-image: url("../assets/images/mobile/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-creatives > h1 {
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+.arrow-down {
+    content: url("../assets/images/icon-arrow-down.svg");
+}
+
+.sec-transform, .sec-standout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.egg {
+    content: url("../assets/images/mobile/image-transform.jpg");
+    max-width: 100%;
+}
+
+.sec-transform-text, .sec-standout-text {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+}
+
+.sec-transform-text > h2, .sec-standout-text > h2 {
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.sec-transform-text > p, .sec-standout-text > p {
+    font-family: "Barlow";
+    color: hsl(232, 10%, 55%);
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+
+
+.sec-transform-text > a, .sec-standout-text > a {
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* .highlight {
+    height: 0px;
+    border-radius: 3px;
+    background: #00a75d;
+    border-radius: 3rem;
+} */
+
+.link-highlighted::after {
+    background: #00a75d;
+    height: 6px;
+    border-radius: 3px;
+    margin-top: -5px;
+    display: block;
+}
+
+.cup {
+    content: url("../assets/images/mobile/image-stand-out.jpg");
+    max-width: 100%;
+}
+
+/* .sec-graphic-design {
+    background-image: url("../assets/images/mobile/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 30rem;
+} */
+
+.sec-graphic-design, .sec-photography {
+    position: relative;
+    text-align: center;
+}
+
+.cherries {
+    content: url("../assets/images/mobile/image-graphic-design.jpg");
+    max-width: 100%;
+}
+
+.sec-graphic-design-text {
+    position: absolute;
+    bottom: 5%;
+    padding: 1rem;
+    color: hsl(167, 40%, 24%);
+}
+
+.sec-graphic-design-text > h2, .sec-photography-text > h2 {
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.sec-graphic-design-text > p, .sec-photography-text > p {
+    font-family: "Barlow";
+}
+
+.tangerine {
+    content: url("../assets/images/mobile/image-photography.jpg");
+    max-width: 100%;
+}
+
+.sec-photography-text {
+    position: absolute;
+    bottom: 5%;
+    padding: 1rem;
+    color: hsl(198, 62%, 26%);
+}
+
+.testimonials {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+     padding: 1rem 2rem;
+}
+
+.testimonials > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.testimonials > section:first-of-type {
+    margin-top: 3rem;
+}
+
+.testimonials > h3 {
+    font-weight: 900;
+    text-align: center;
+    font-size: 1rem;
+    color:hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.testimonials img {
+    max-height: 4rem;
+    max-width: 100%;
+    border-radius: 5rem;
+}
+
+.emily-profile-pic {
+    content: url("../assets/images/image-emily.jpg");
+}
+
+.thomas-profile-pic {
+    content: url("../assets/images/image-thomas.jpg");
+}
+
+.jennie-profile-pic {
+    content: url("../assets/images/image-jennie.jpg");
+}
+
+.testimonials p:first-of-type {
+    font-family: "Barlow";
+    color: hsl(213, 9%, 39%);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials p {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.testimonials p:last-of-type {
+    font-family: "Barlow";
+    color: hsl(210, 4%, 67%);
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 0;
+}
