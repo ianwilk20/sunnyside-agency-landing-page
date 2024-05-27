@@ -33,23 +33,22 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2.5rem;
-    padding: 0.25rem 1rem;
     right: 0;
     left: 0;
 }
 
-.open-sidenav {
+#nav-checkbox, .open-sidenav, .overlay {
     display: none;
 }
 
-@media screen and (width <= 800px) {
+@media screen and (width <= 750px) {
     .orange {
         content: url("../assets/images/mobile/image-header.jpg");
         max-width: 100%;
     }
 
 
-    .links-container:before {
+    .links-container::before {
         content: "";
         position: absolute;
         right: 0;
@@ -104,6 +103,10 @@ nav {
     .open-sidenav {
         display: block;
     }
+
+    nav {
+        padding: 0.25rem 1rem;
+    }
     
     #nav-checkbox, .overlay {
         display: none;
@@ -132,6 +135,15 @@ nav {
         fill: rgba(255, 255, 255, 0.6);
     }
 
+    .sec-creatives-body-text {
+        top: 20%;
+        left: 50%;
+        right: 50%;
+    }
+
+    .sec-creatives-body-text > h1 {
+        font-size: 2rem;
+    }
 
     .sec-transform, .sec-standout {
         display: flex;
@@ -145,6 +157,20 @@ nav {
         padding: 3rem 2rem;
         align-items: center;
     }
+
+    .sec-transform-text > h2, .sec-standout-text > h2 {
+        color: hsl(212, 27%, 19%);
+        font-weight: 900;
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+
+    .sec-transform-text > p, .sec-standout-text > p {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
 
     .egg {
         content: url("../assets/images/mobile/image-transform.jpg");
@@ -178,7 +204,286 @@ nav {
         display: flex;
     }
 
+    .sec-graphic-design-text > p, .sec-photography-text > p {
+        line-height: 1.2rem;
+    }
+
+
+    .sec-testimonials {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+
+    .testimonials > section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .testimonials > section:first-of-type {
+        margin-top: 3rem;
+    }
+
+    .image-gallery > img {
+        max-width: 50%;
+    }
+
+    .sec-graphic-design-text, .sec-photography-text {
+        padding: 1rem;
+        bottom: 5%;
+    }
+
+    .footer-site-pages {
+        justify-content: space-around;
+        margin-top: 1.5rem;
+    }
+
+    .footer-links {
+        justify-content: space-around;
+        min-width: 60%;
+    }
+
+    footer > svg {
+        transform: scale(1.2);
+    }
+
 }
+
+@media screen and (750px < width < 1000px) {
+    .sec-transform-text, .sec-standout-text {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 2rem;
+        max-width: 50%
+    }
+
+    .sec-transform-text > h2, .sec-standout-text > h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .sec-transform-text > p, .sec-standout-text > p {
+        margin-bottom: 0.5rem;
+    }
+
+    .sec-graphic-design-text, .sec-photography-text {
+        bottom: 0%;
+    }
+
+    .sec-graphic-design-text > p, .sec-photography-text > p {
+        padding: 0rem 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .sec-graphic-design-text > h2, .sec-photography-text > h2 {
+        margin-bottom: 0;
+    }
+
+    .sec-testimonials {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 2.5rem;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .testimonials {
+        max-width: 100%;
+    }
+}
+
+@media screen and (width > 1000px) {
+    .sec-transform-text, .sec-standout-text {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 12rem;
+        min-width: 50%;
+        box-sizing: border-box;
+    }
+
+    .sec-transform-text > p, .sec-standout-text > p {
+        margin-bottom: 2rem;
+    }
+
+    .sec-graphic-design-text, .sec-photography-text {
+        bottom: 5%;
+        right: 0;
+        left: 0;
+    }
+
+    .sec-graphic-design-text > p, .sec-photography-text > p {
+        padding: 0 20%;
+    }
+
+    .sec-testimonials {
+        display: flex;
+        flex-direction: column;
+        padding: 6rem 5rem;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .testimonials {
+        max-width: 75%;
+    }
+}
+
+@media screen and (width > 750px) {
+    
+    nav {
+        padding: 1rem 2rem;
+    }
+
+    .links-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-width: 30%;
+        gap: 2.5rem;
+    }
+
+    .links-container > a {
+        text-decoration: none;
+        font-family: "Barlow";
+        font-weight: 600;
+        color: white;
+    }
+
+    .links-container > a:hover {
+        text-decoration: none;
+        font-family: "Barlow";
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.567);
+    }
+
+    .sec-creatives-body-text {
+        left: 0%;
+        right: 0%;
+    }
+
+    .sec-creatives-body-text > h1 {
+        font-size: 3rem;
+    }
+    
+    .sec-transform {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .egg {
+        content: url("../assets/images/desktop/image-transform.jpg");
+        min-width: 50%;
+    }
+
+    .sec-transform-text > p, .sec-standout-text > p {
+        text-align: left;
+    }
+    
+
+    .cup {
+        content: url("../assets/images/desktop/image-stand-out.jpg");
+        min-width: 50%;
+    }
+
+    .sec-graphic-design, .sec-photography {
+        position: relative;
+        text-align: center;
+        display: flex;
+        min-width: 50%;
+    }    
+    
+    .cherries {
+        content: url("../assets/images/desktop/image-graphic-design.jpg");
+        min-width: 100%;
+    }
+
+    .sec-standout {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .tangerine {
+        content: url("../assets/images/desktop/image-photography.jpg");
+        min-width: 100%;
+    }
+
+    .sec-graphic-design-text > p, .sec-photography-text > p {
+        line-height: 1.6rem;
+    }
+
+    .sec-specialties {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sec-photography {
+        min-width: 50%;
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .testimonials > section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0rem 1rem;
+    }
+
+    .image-gallery > img {
+        width: 25%;
+    }
+
+    .footer-site-pages {
+        justify-content: center;
+        gap: 3.5rem;
+        margin-top: 2.5rem;
+    }
+
+    .footer-site-pages > a:hover {
+        color: white;
+    }
+
+    .footer-links {
+        gap: 1.5rem;
+    }
+
+    .footer-links:hover {
+        color: white
+    }
+
+    footer > svg {
+        transform: scale(1.4);
+    }
+
+    .contact {
+        font-family: "Fraunces";
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        border-radius: 10rem;
+        height: 3rem;
+        padding: 0rem 1.5rem;
+        color: hsl(212, 27%, 19%);
+        background-color: white;
+        border: none;
+    }
+
+    .contact:hover {
+        color: white;
+        background-color: #ffffff3d;
+    }
+
+}
+
+
 
 .sec-creatives {
     position: relative;
@@ -195,15 +500,12 @@ nav {
     color: white;
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 2rem;
     letter-spacing: 0.3rem;
 }
 
 .sec-creatives-body-text {
     position: absolute;
     top: 20%;
-    left: 50%;
-    right: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,62 +516,9 @@ nav {
     content: url("../assets/images/icon-arrow-down.svg");
 }
 
-@media screen and (width > 800px) {
-    .sec-transform {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-
-    .egg {
-        content: url("../assets/images/desktop/image-transform.jpg");
-        width: 50%;
-    }
-
-    .sec-transform-text, .sec-standout-text {
-        display: flex;
-        flex-direction: column;
-        padding: 3rem 2rem;
-        align-items: center;
-        width: 50%
-    }
-    
-
-    .cup {
-        content: url("../assets/images/desktop/image-stand-out.jpg");
-        width: 50%;
-    }
-
-    .sec-graphic-design, .sec-photography {
-        position: relative;
-        text-align: center;
-        display: flex;
-        width: 50%;
-    }    
-    
-    .cherries {
-        content: url("../assets/images/desktop/image-graphic-design.jpg");
-        max-width: 100%;
-    }
-
-    .sec-standout {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .tangerine {
-        content: url("../assets/images/desktop/image-photography.jpg");
-        max-width: 100%;
-    }
-
-}
-
-
 .sec-transform-text > h2, .sec-standout-text > h2 {
     color: hsl(212, 27%, 19%);
     font-weight: 900;
-    text-align: center;
     font-size: 1.8rem;
     margin-top: 0;
 }
@@ -278,8 +527,6 @@ nav {
     font-family: "Barlow";
     font-weight: 600;
     color: hsl(232, 10%, 55%);
-    text-align: center;
-    margin-bottom: 2rem;
     margin-top: 0.5rem;
     line-height: 1.5rem;
 }
@@ -337,8 +584,6 @@ nav {
 
 .sec-graphic-design-text {
     position: absolute;
-    bottom: 5%;
-    padding: 1rem;
     color: hsl(167, 40%, 24%);
 }
 
@@ -352,21 +597,11 @@ nav {
     font-family: "Barlow";
     font-weight: 600;
     font-size: 0.9rem;
-    line-height: 1.2rem;
 }
 
 .sec-photography-text {
     position: absolute;
-    bottom: 5%;
-    padding: 1rem;
     color: hsl(198, 62%, 26%);
-}
-
-.testimonials {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 2rem;
 }
 
 .testimonials > section {
@@ -376,11 +611,7 @@ nav {
     margin-bottom: 3rem;
 }
 
-.testimonials > section:first-of-type {
-    margin-top: 3rem;
-}
-
-.testimonials > h3 {
+.sec-testimonials > h3 {
     font-weight: 900;
     text-align: center;
     font-size: 0.85rem;
@@ -439,9 +670,6 @@ nav {
     flex-wrap: wrap;
 }
 
-.image-gallery > img {
-    max-width: 50%;
-}
 
 .milk {
     content: url("../assets/images/mobile/image-gallery-milkbottles.jpg");
@@ -471,16 +699,10 @@ footer {
     font-weight: 600;
 }
 
-footer > svg {
-    transform: scale(1.2);
-}
-
 .footer-site-pages {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     min-width: 100%;
-    margin-top: 1.5rem;
 }
 
 .footer-site-pages > a {
@@ -496,8 +718,6 @@ footer > svg {
 .footer-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    min-width: 60%;
     margin-top: 4rem;
 }
 
@@ -557,5 +777,8 @@ footer > svg {
 }
 .attribution a { 
     color: hsl(167, 40%, 24%); 
+}
+.attribution a:hover { 
+    color: white; 
 }
 
