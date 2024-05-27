@@ -48,7 +48,7 @@ Mobile:
 
 ### What I learned
 
-- The highlighted/underlined "Learn more" links were trickier than I thought. I learned how to use ```::after```  pseudo-element to acheive the effect. Specifically, I learned that the ```::before``` ```::after``` psuedo elements allow you to put content before or after an element postionally. In my case, the text content of the ```::before``` was empty, but had a height and a color for the highlighted appearance of the link. However, I also learned that if you specify text content for either of those pseudo elements, it allows you to insert content on a page without it needing to be in the HTML.
+- The highlighted/underlined "Learn more" links were trickier than I thought. I learned how to use ```::after```  pseudo-element to acheive the effect. Specifically, I learned that the ```::before``` ```::after``` psuedo elements allow you to put content before or after an element postionally. In my case, the text content of the ```::after``` was empty, but had a height and a color for the highlighted appearance of the link. However, I also learned that if you specify text content for either of those pseudo elements, it allows you to insert content on a page without it needing to be in the HTML.
 
 - Specific positioning for certain elements was required, for example, the header "We are creatives" with the arrow pointing down because they are overlayed on top of the orange cross-section. For this case, I needed to position the header and arrow relative to the ancestor that was the section holding the orange image. I then specified the ```top``` property to position the header and arrow 20% below the top of the ancestor.
 
